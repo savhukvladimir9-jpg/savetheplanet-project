@@ -1,49 +1,200 @@
-<!DOCTYPE html>  <h2>👥 Наша команда</h2>
-  <p>Команда <b>SaveThePlanet</b> — это энтузиасты, программисты, экологи и активисты, объединившиеся ради одной цели: сделать Землю чище и устойчивее.</p>
-
-  <ul>
-    <li><b>Владимир Савчук</b> — основатель проекта, разработчик и идеолог движения SaveThePlanet.</li>
-    <li><b>Команда STP</b> — специалисты по блокчейну, маркетингу и экологии, которые помогают продвигать миссию проекта во всем мире.</li>
-  </ul>
-
-  <p>Мы открыты к сотрудничеству и партнёрству. Если вы хотите присоединиться — напишите нам на <a href="mailto:savhukvladimir9@gmail.com">savhukvladimir9@gmail.com</a>.</p>
-
-<html lang="ru">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SaveThePlanet (STP)</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SaveThePlanet (STP) — Official</title>
+
+  <style>
+    /* Basic reset */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+      background: #f3f6f5;
+      color: #0b2a1f;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.45;
+    }
+
+    .wrap { max-width: 1100px; margin: 28px auto; padding: 20px; }
+
+    header {
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px;
+      margin-bottom: 24px;
+    }
+    .brand { display:flex; gap:14px; align-items:center; text-decoration:none; color:inherit; }
+    .logo {
+      width:56px; height:56px; border-radius:12px; background:linear-gradient(135deg,#f5c84d,#2bb673);
+      display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; font-size:18px;
+      box-shadow: 0 6px 20px rgba(12,60,30,0.08);
+    }
+    .brand h1 { font-size:20px; margin:0; }
+    .brand p { font-size:12px; color:#28523f; opacity:0.9; margin-top:2px; }
+
+    nav { display:flex; gap:12px; align-items:center; }
+    nav a { text-decoration:none; color:#225c3a; font-weight:600; padding:8px 12px; border-radius:8px; }
+    nav a:hover { background: rgba(34,92,58,0.06); }
+
+    .hero {
+      display:flex; gap:28px; align-items:flex-start; margin-bottom:22px;
+    }
+    .hero .left { flex:1; background:#ffffff; padding:22px; border-radius:12px; box-shadow:0 6px 24px rgba(8,20,10,0.04); }
+    .hero h2 { color:#174b33; font-size:28px; margin-bottom:8px; }
+    .hero p.lead { color:#3b604d; margin-bottom:14px; }
+    .cta-row { display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-top:6px; }
+    .btn { display:inline-block; padding:12px 18px; border-radius:10px; text-decoration:none; font-weight:700; }
+    .btn-primary { background:#2c7c31; color:#fff; }
+    .btn-outline { border:1px solid #2c7c31; color:#2c7c31; background:transparent; }
+
+    /* Info boxes */
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:18px; }
+    .card { background:#fff; padding:16px; border-radius:10px; box-shadow:0 6px 18px rgba(8,20,10,0.04); }
+    .card h3 { font-size:16px; color:#1e6a3d; margin-bottom:8px; }
+    .card p { color:#3b604d; font-size:14px; }
+
+    section { margin-top:20px; }
+
+    .two-col { display:grid; grid-template-columns: 1fr 420px; gap:18px; }
+    .white { background:#fff; padding:18px; border-radius:12px; box-shadow:0 6px 24px rgba(8,20,10,0.04); }
+
+    footer { margin-top:26px; text-align:center; color:#6c7b6f; font-size:14px; }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .grid { grid-template-columns:repeat(2,1fr); }
+      .two-col { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
-<body style="font-family: Arial; background-color: #f6fff6; color: #222; line-height: 1.6; padding: 20px;">
-  <h1>🌍 SaveThePlanet (STP)</h1>
-  <p><b>SaveThePlanet</b> — это глобальный токен, направленный на поддержку экологических инициатив, посадку деревьев и развитие устойчивых технологий.</p>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#" aria-label="SaveThePlanet">
+        <div class="logo">STP</div>
+        <div>
+          <h1>SaveThePlanet</h1>
+          <p>STP — Ecosystem for real environmental impact</p>
+        </div>
+      </a>
 
-  <h2>📩 Контакты</h2>
-  <ul>
-    <li><b>Почта:</b> <a href="mailto:savhukvladimir9@gmail.com">savhukvladimir9@gmail.com</a></li>
-    <li><b>Telegram:</b> <a href="https://t.me/saveplanettokn" target="_blank">t.me/saveplanettokn</a></li>
-    <li><b>Twitter (X):</b> <a href="https://x.com/STPsavePlanet" target="_blank">@STPsavePlanet</a></li>
-  </ul>
+      <nav>
+        <a href="#tokenomics">Tokenomics</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <h2>🔗 Информация о токене</h2>
-  <p><b>Адрес контракта:</b> 0xb5c048eeD5a23B4077e58b2EE96DE44B607b7da3</p>
+    <div class="hero">
+      <div class="left">
+        <h2>SaveThePlanet (STP) — Token for a greener future</h2>
+        <p class="lead">STP is an eco-token designed to fund real-world environmental projects: reforestation, ocean cleanup and sustainable tech. Built with transparency and community governance.</p>
 
-  <h2>🌱 О проекте</h2>
-  <p>Проект создан для вдохновения людей по всему миру действовать ради защиты окружающей среды. Мы поддерживаем инициативы по очистке океанов, посадке деревьев и продвижению устойчивых решений.<//
-   
- <a href="https://raw.githubusercontent.com/savhukvladimir9-jpg/savetheplanet-project/main/docs/STP_Whitepaper_Official.pdf"
-   target="_blank"
-   style="display:inline-block;padding:10px 18px;background:#4CAF50;color:#fff;
-          border-radius:8px;text-decoration:none;font-weight:600;">
-   📄 Открыть Whitepaper (PDF)
-</a>
+        <div class="cta-row">
+          <!-- IMPORTANT: this link must be exact path to file in /docs folder -->
+          <a class="btn btn-primary" href="STP_Whitepaper_Official.pdf" target="_blank" rel="noopener noreferrer">📄 Whitepaper (PDF)</a>
 
-   
-   
+          <a class="btn btn-outline" href="#tokenomics">View Tokenomics</a>
+        </div>
 
+        <div class="grid" style="margin-top:16px;">
+          <div class="card">
+            <h3>Total Supply</h3>
+            <p>1,000,000,000 STP</p>
+          </div>
+          <div class="card">
+            <h3>Chain</h3>
+            <p>BNB Smart Chain (BEP-20)</p>
+          </div>
+          <div class="card">
+            <h3>Contract</h3>
+            <p><small>0xb5c048eeD5a23B4077e58b2EE96DE44B607b7da3</small></p>
+          </div>
+        </div>
+      </div>
 
-  <footer style="margin-top: 30px; font-size: 14px; color: #555;">
-    <p>© 2025 SaveThePlanet — официальный сайт токена STP.</p>
-  </footer>
+      <aside style="width:340px;">
+        <div class="white">
+          <h3>Quick Links</h3>
+          <p><strong>Email:</strong> <a href="mailto:savhukvladimir9@gmail.com">savhukvladimir9@gmail.com</a></p>
+          <p><strong>Telegram:</strong> <a href="https://t.me/saveplanettokn" target="_blank">t.me/saveplanettokn</a></p>
+          <p><strong>Twitter:</strong> <a href="https://x.com/STPsavePlanet" target="_blank">x.com/STPsavePlanet</a></p>
+        </div>
+
+        <div style="height:12px"></div>
+
+        <div class="white">
+          <h3>Safety</h3>
+          <p>Smart contract audits planned. Multi-sig for fund wallet. Transparency reports published regularly.</p>
+        </div>
+      </aside>
+    </div>
+
+    <section id="tokenomics" class="white">
+      <h2>Tokenomics</h2>
+      <p style="margin-bottom:12px;">Key parameters and allocation.</p>
+
+      <div style="display:flex;gap:20px;flex-wrap:wrap;">
+        <div style="flex:1;min-width:210px;">
+          <h3 style="margin-bottom:8px;color:#1e6a3d;">Allocation</h3>
+          <ul>
+            <li>40% Community & Rewards</li>
+            <li>25% Development</li>
+            <li>20% Liquidity</li>
+            <li>10% Marketing</li>
+            <li>5% Team / Charity reserve</li>
+          </ul>
+        </div>
+
+        <div style="flex:1;min-width:210px;">
+          <h3 style="margin-bottom:8px;color:#1e6a3d;">Transaction Tax</h3>
+          <ul>
+            <li>Total tax: 5%</li>
+            <li>2% Eco Fund</li>
+            <li>1% Liquidity</li>
+            <li>1% Marketing</li>
+            <li>1% Development</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap" style="margin-top:18px;">
+      <div class="white">
+        <h2>Roadmap</h2>
+        <ul>
+          <li><strong>Q1:</strong> Token launch, website, basic community</li>
+          <li><strong>Q2:</strong> Whitepaper v2, DEX listing, initial partnerships</li>
+          <li><strong>Q3:</strong> Launch Eco Fund pilots, audits, transparency dashboard</li>
+          <li><strong>Q4:</strong> DAO governance, international expansion, CEX talks</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="team" style="margin-top:18px;">
+      <div class="white">
+        <h2>Team</h2>
+        <p><strong>Founder:</strong> Vladimir Savhuk — project lead and ideator</p>
+        <p><strong>Core Team:</strong> blockchain devs, eco-advisors, marketing & community managers (public profiles to be added)</p>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:18px;">
+      <div class="white">
+        <h2>Contact</h2>
+        <p>For partnerships, listing requests or media: <a href="mailto:savhukvladimir9@gmail.com">savhukvladimir9@gmail.com</a></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 SaveThePlanet (STP) — All rights reserved</p>
+    </footer>
+  </div>
 </body>
 </html>
+
