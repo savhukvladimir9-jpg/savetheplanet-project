@@ -1,200 +1,169 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SaveThePlanet (STP) — Official</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SaveThePlanet (STP)</title>
   <style>
-    /* Basic reset */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
-      background: #f3f6f5;
-      color: #0b2a1f;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      line-height: 1.45;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #000214;
+      color: #ffffff;
     }
-
-    .wrap { max-width: 1100px; margin: 28px auto; padding: 20px; }
-
     header {
-      display:flex; align-items:center; justify-content:space-between;
-      gap:16px;
-      margin-bottom: 24px;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.3);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(10px);
     }
-    .brand { display:flex; gap:14px; align-items:center; text-decoration:none; color:inherit; }
     .logo {
-      width:56px; height:56px; border-radius:12px; background:linear-gradient(135deg,#f5c84d,#2bb673);
-      display:flex; align-items:center; justify-content:center; color:#fff; font-weight:800; font-size:18px;
-      box-shadow: 0 6px 20px rgba(12,60,30,0.08);
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #00eaff;
     }
-    .brand h1 { font-size:20px; margin:0; }
-    .brand p { font-size:12px; color:#28523f; opacity:0.9; margin-top:2px; }
-
-    nav { display:flex; gap:12px; align-items:center; }
-    nav a { text-decoration:none; color:#225c3a; font-weight:600; padding:8px 12px; border-radius:8px; }
-    nav a:hover { background: rgba(34,92,58,0.06); }
-
+    nav a {
+      margin-left: 25px;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #00eaff;
+    }
     .hero {
-      display:flex; gap:28px; align-items:flex-start; margin-bottom:22px;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: linear-gradient(180deg, #000214, #001b34);
+      padding: 0 20px;
     }
-    .hero .left { flex:1; background:#ffffff; padding:22px; border-radius:12px; box-shadow:0 6px 24px rgba(8,20,10,0.04); }
-    .hero h2 { color:#174b33; font-size:28px; margin-bottom:8px; }
-    .hero p.lead { color:#3b604d; margin-bottom:14px; }
-    .cta-row { display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-top:6px; }
-    .btn { display:inline-block; padding:12px 18px; border-radius:10px; text-decoration:none; font-weight:700; }
-    .btn-primary { background:#2c7c31; color:#fff; }
-    .btn-outline { border:1px solid #2c7c31; color:#2c7c31; background:transparent; }
-
-    /* Info boxes */
-    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:18px; }
-    .card { background:#fff; padding:16px; border-radius:10px; box-shadow:0 6px 18px rgba(8,20,10,0.04); }
-    .card h3 { font-size:16px; color:#1e6a3d; margin-bottom:8px; }
-    .card p { color:#3b604d; font-size:14px; }
-
-    section { margin-top:20px; }
-
-    .two-col { display:grid; grid-template-columns: 1fr 420px; gap:18px; }
-    .white { background:#fff; padding:18px; border-radius:12px; box-shadow:0 6px 24px rgba(8,20,10,0.04); }
-
-    footer { margin-top:26px; text-align:center; color:#6c7b6f; font-size:14px; }
-
-    /* Responsive */
-    @media (max-width: 900px) {
-      .grid { grid-template-columns:repeat(2,1fr); }
-      .two-col { grid-template-columns: 1fr; }
+    .hero h1 {
+      font-size: 55px;
+      max-width: 800px;
     }
-    @media (max-width: 600px) {
-      .grid { grid-template-columns: 1fr; }
+    .hero p {
+      font-size: 20px;
+      margin-top: -10px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      background: #00eaff;
+      border-radius: 8px;
+      color: #000214;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 25px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #00aacc;
+    }
+    section {
+      padding: 80px 50px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #00eaff;
+    }
+    .tokenomics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .roadmap ul {
+      list-style: none;
+      padding: 0;
+    }
+    .roadmap li {
+      padding: 10px 0;
+      border-left: 3px solid #00eaff;
+      margin-bottom: 15px;
+      padding-left: 15px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: rgba(0,0,0,0.4);
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <a class="brand" href="#" aria-label="SaveThePlanet">
-        <div class="logo">STP</div>
-        <div>
-          <h1>SaveThePlanet</h1>
-          <p>STP — Ecosystem for real environmental impact</p>
-        </div>
-      </a>
+  <header>
+    <div class="logo">STP</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="whitepaper.pdf" target="_blank">Whitepaper</a>
+    </nav>
+  </header>
 
-      <nav>
-        <a href="#tokenomics">Tokenomics</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#team">Team</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <div class="hero">
-      <div class="left">
-        <h2>SaveThePlanet (STP) — Token for a greener future</h2>
-        <p class="lead">STP is an eco-token designed to fund real-world environmental projects: reforestation, ocean cleanup and sustainable tech. Built with transparency and community governance.</p>
-
-        <div class="cta-row">
-          <!-- IMPORTANT: this link must be exact path to file in /docs folder -->
-          <a class="btn btn-primary" href="STP_Whitepaper_Official.pdf" target="_blank" rel="noopener noreferrer">📄 Whitepaper (PDF)</a>
-
-          <a class="btn btn-outline" href="#tokenomics">View Tokenomics</a>
-        </div>
-
-        <div class="grid" style="margin-top:16px;">
-          <div class="card">
-            <h3>Total Supply</h3>
-            <p>1,000,000,000 STP</p>
-          </div>
-          <div class="card">
-            <h3>Chain</h3>
-            <p>BNB Smart Chain (BEP-20)</p>
-          </div>
-          <div class="card">
-            <h3>Contract</h3>
-            <p><small>0xb5c048eeD5a23B4077e58b2EE96DE44B607b7da3</small></p>
-          </div>
-        </div>
-      </div>
-
-      <aside style="width:340px;">
-        <div class="white">
-          <h3>Quick Links</h3>
-          <p><strong>Email:</strong> <a href="mailto:savhukvladimir9@gmail.com">savhukvladimir9@gmail.com</a></p>
-          <p><strong>Telegram:</strong> <a href="https://t.me/saveplanettokn" target="_blank">t.me/saveplanettokn</a></p>
-          <p><strong>Twitter:</strong> <a href="https://x.com/STPsavePlanet" target="_blank">x.com/STPsavePlanet</a></p>
-        </div>
-
-        <div style="height:12px"></div>
-
-        <div class="white">
-          <h3>Safety</h3>
-          <p>Smart contract audits planned. Multi-sig for fund wallet. Transparency reports published regularly.</p>
-        </div>
-      </aside>
+  <div class="hero">
+    <div>
+      <h1>SaveThePlanet Token — A Sustainable Blockchain Future</h1>
+      <p>Eco-driven cryptocurrency designed to support global environmental action.</p>
+      <a href="whitepaper.pdf" class="btn" target="_blank">Download Whitepaper</a>
     </div>
-
-    <section id="tokenomics" class="white">
-      <h2>Tokenomics</h2>
-      <p style="margin-bottom:12px;">Key parameters and allocation.</p>
-
-      <div style="display:flex;gap:20px;flex-wrap:wrap;">
-        <div style="flex:1;min-width:210px;">
-          <h3 style="margin-bottom:8px;color:#1e6a3d;">Allocation</h3>
-          <ul>
-            <li>40% Community & Rewards</li>
-            <li>25% Development</li>
-            <li>20% Liquidity</li>
-            <li>10% Marketing</li>
-            <li>5% Team / Charity reserve</li>
-          </ul>
-        </div>
-
-        <div style="flex:1;min-width:210px;">
-          <h3 style="margin-bottom:8px;color:#1e6a3d;">Transaction Tax</h3>
-          <ul>
-            <li>Total tax: 5%</li>
-            <li>2% Eco Fund</li>
-            <li>1% Liquidity</li>
-            <li>1% Marketing</li>
-            <li>1% Development</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="roadmap" style="margin-top:18px;">
-      <div class="white">
-        <h2>Roadmap</h2>
-        <ul>
-          <li><strong>Q1:</strong> Token launch, website, basic community</li>
-          <li><strong>Q2:</strong> Whitepaper v2, DEX listing, initial partnerships</li>
-          <li><strong>Q3:</strong> Launch Eco Fund pilots, audits, transparency dashboard</li>
-          <li><strong>Q4:</strong> DAO governance, international expansion, CEX talks</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="team" style="margin-top:18px;">
-      <div class="white">
-        <h2>Team</h2>
-        <p><strong>Founder:</strong> Vladimir Savhuk — project lead and ideator</p>
-        <p><strong>Core Team:</strong> blockchain devs, eco-advisors, marketing & community managers (public profiles to be added)</p>
-      </div>
-    </section>
-
-    <section id="contact" style="margin-top:18px;">
-      <div class="white">
-        <h2>Contact</h2>
-        <p>For partnerships, listing requests or media: <a href="mailto:savhukvladimir9@gmail.com">savhukvladimir9@gmail.com</a></p>
-      </div>
-    </section>
-
-    <footer>
-      <p>© 2025 SaveThePlanet (STP) — All rights reserved</p>
-    </footer>
   </div>
+
+  <section id="about">
+    <h2>About STP</h2>
+    <p>
+      SaveThePlanet (STP) — a next‑generation ecological cryptocurrency built to fund real‑world sustainability initiatives. The project supports ocean cleanup, reforestation, wildlife protection, and development of green blockchain technologies.
+    </p>
+  </section>
+
+  <section id="tokenomics">
+    <h2>Tokenomics</h2>
+    <div class="tokenomics">
+      <div class="card"><strong>Total Supply:</strong> 1,000,000,000 STP</div>
+      <div class="card"><strong>Liquidity:</strong> 40%</div>
+      <div class="card"><strong>Marketing:</strong> 20%</div>
+      <div class="card"><strong>Charity Pool:</strong> 20%</div>
+      <div class="card"><strong>Development:</strong> 10%</div>
+      <div class="card"><strong>Team:</strong> 10% (Locked)</div>
+    </div>
+  </section>
+
+  <section id="roadmap">
+    <h2>Roadmap</h2>
+    <div class="roadmap">
+      <ul>
+        <li>Q1 — Token Launch, Website, Branding</li>
+        <li>Q2 — Listings, Partnerships, Marketing Campaign</li>
+        <li>Q3 — STP Wallet App & Rewards System</li>
+        <li>Q4 — Global Charity Program & Eco Grants</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 SaveThePlanet — All Rights Reserved
+  </footer>
 </body>
 </html>
+
 
