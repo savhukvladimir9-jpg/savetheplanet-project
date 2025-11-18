@@ -1,1 +1,33 @@
-https://bronze-mad-moth-168.mypinata.cloud/ipfs/bafkreibahgwq56zqpnaasolyl55d3gaumxthetlwvqqbbszmm25kf5tli4
+
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <radialGradient id="g1" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#ffd87a"/>
+      <stop offset="100%" stop-color="#b68629"/>
+    </radialGradient>
+    <radialGradient id="g2" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#2a7fb0"/>
+      <stop offset="100%" stop-color="#144f6c"/>
+    </radialGradient>
+  </defs>
+  <circle cx="512" cy="512" r="460" fill="url(#g1)" />
+  <circle cx="512" cy="512" r="380" fill="#082b3a" />
+  <circle cx="512" cy="512" r="300" fill="url(#g2)" />
+  <!-- simple continents -->
+  <g fill="#62913d">
+    <ellipse cx="380" cy="480" rx="110" ry="80" />
+    <ellipse cx="520" cy="390" rx="160" ry="110" />
+    <ellipse cx="640" cy="560" rx="90" ry="60" />
+  </g>
+  <!-- sprout -->
+  <path d="M512 180 L512 100" stroke="#509f57" stroke-width="12" stroke-linecap="round"/>
+  <path d="M478 120 Q512 80 546 120" fill="#5fbf61" />
+  <!-- heart -->
+  <path d="M720 300 C700 260 760 260 740 300 L720 320 Z" fill="#66be78" />
+  <!-- STP letters -->
+  <text x="512" y="570" font-family="Serif" font-weight="bold" font-size="220" text-anchor="middle" fill="#e6b95a">STP</text>
+  <!-- top and bottom texts -->
+  <text x="512" y="120" text-anchor="middle" font-family="Sans-serif" font-size="36" fill="#4f2f12">SAVE THE PLANET</text>
+  <text x="512" y="920" text-anchor="middle" font-family="Sans-serif" font-size="36" fill="#4f2f12">CHARITY TOKEN</text>
+</svg>
