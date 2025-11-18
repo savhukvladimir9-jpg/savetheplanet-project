@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mission & Vision — STP</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #0e1217;
+        color: #e5e7eb;
+        margin: 0;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 60px auto;
+        background: #161b22;
+        padding: 40px;
+        border-radius: 14px;
+        box-shadow: 0 0 25px rgba(40,199,111,0.2);
+        animation: fade 1s ease;
+    }
+
+    h1, h2 {
+        color: #28c76f;
+    }
+
+    @keyframes fade {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<h1>Mission & Vision — Save The Planet</h1>
+
+<h2>Mission</h2>
+<p>To unite people and technologies worldwide to heal our planet through a blockchain-powered eco-economy.</p>
+
+<h2>Vision</h2>
+<p>A global ecosystem where humanity restores the environment and is rewarded for real positive actions.</p>
+
+<h2>Core Goals</h2>
+<ul>
+<li>Reduce global pollution</li>
+<li>Create transparent eco-financing</li>
+<li>Support eco-startups</li>
+<li>Build a sustainable green economy</li>
+</ul>
+
+</div>
+</body>
+</html>
