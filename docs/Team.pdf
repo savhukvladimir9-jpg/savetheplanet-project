@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Model — STP</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0A0A0A;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+
+        .nav {
+            margin-top: 25px;
+            margin-bottom: 40px;
+        }
+
+        .nav a {
+            padding: 12px 22px;
+            margin: 5px;
+            border: 2px solid #7B2EFF;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.2s;
+            font-size: 16px;
+        }
+
+        .nav a:hover {
+            background-color: #7B2EFF;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 850px;
+            margin: auto;
+            background-color: #111;
+            padding: 30px;
+            border-radius: 14px;
+            border: 1px solid #2B2B2B;
+        }
+
+        h1 {
+            color: #A970FF;
+        }
+
+        .section {
+            text-align: left;
+            margin-top: 25px;
+            line-height: 1.65;
+        }
+
+        .token-box {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #333;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="nav">
+    <a href="index.html">Home</a>
+    <a href="WTPPR.html">Whitepaper</a>
+    <a href="MISION.html">Mission</a>
+</div>
+
+<div class="container">
+    <h1>Token Model (STP)</h1>
+
+    <div class="section">
+        <div class="token-box">
+            <strong>Token Name:</strong> Save The Planet (STP)<br>
+            <strong>Standard:</strong> ERC-20<br>
+            <strong>Total Supply:</strong> 1,000,000,000 STP
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Distribution</h2>
+        <p>● 40% — Ecosystem rewards</p>
+        <p>● 20% — Liquidity</p>
+        <p>● 15% — Team (locked)</p>
+        <p>● 10% — Marketing</p>
+        <p>● 10% — Development fund</p>
+        <p>● 5% — Strategic partners</p>
+    </div>
+
+</div>
+
+</body>
+</html>
