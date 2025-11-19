@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaveThePlanet – DAO Governance</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0e1a2b;
+            color: #e8f4ff;
+            margin: 0;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid #1f3551;
+        }
+
+        h1, h2 {
+            color: #52b5ff;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #14263b;
+            border-radius: 10px;
+            border: 1px solid #1f3551;
+        }
+
+        ul li {
+            margin: 6px 0;
+        }
+
+        .highlight {
+            color: #00eaff;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            font-size: 14px;
+            opacity: .6;
+        }
+
+        a {
+            color: #6fd4ff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SAVETHEPLANET – DAO GOVERNANCE</h1>
+    <p>The decentralized future of the project</p>
+</header>
+
+<section>
+    <h2>What is DAO Governance?</h2>
+    <p>
+        SaveThePlanet (STP) is designed as a decentralized ecosystem where all major decisions 
+        are made by the community through <span class="highlight">DAO voting</span>.
+        Token holders are stakeholders who influence the direction of the project.
+    </p>
+</section>
+
+<section>
+    <h2>Voting Rights</h2>
+    <p>STP holders can vote on:</p>
+    <ul>
+        <li>Allocation of environmental project funds</li>
+        <li>Partnership approvals</li>
+        <li>Development roadmap adjustments</li>
+        <li>New features and upgrades</li>
+        <li>Changes to tokenomics</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Proposal System</h2>
+    <p>A new proposal must include:</p>
+    <ul>
+        <li>Clear description of the initiative</li>
+        <li>Expected environmental impact</li>
+        <li>Budget requirements</li>
+        <li>Implementation timeline</li>
+    </ul>
+    <p>Proposals with <b>over 1% of total STP supply</b> automatically move to voting stage.</p>
+</section>
+
+<section>
+    <h2>Voting Mechanics</h2>
+    <ul>
+        <li>Each vote is weighted by the amount of STP tokens held</li>
+        <li>Voting sessions last from 48 to 168 hours</li>
+        <li>Proposal passes with a minimum 51% majority</li>
+        <li>All results are stored on-chain for full transparency</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Anti-Manipulation & Trust Measures</h2>
+    <ul>
+        <li>On-chain identity verification for proposal submitters</li>
+        <li>Whale control for critical votes (max 20% influence)</li>
+        <li>Audit logs and open results for review</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Long-Term Vision</h2>
+    <p>
+        The goal is to transform SaveThePlanet into a fully self-governed global environmental movement
+        where transparency and community power drive real ecological change.
+    </p>
+</section>
+
+<footer>
+    SaveThePlanet – DAO Governance • 2025
+</footer>
+
+</body>
+</html>
