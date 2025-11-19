@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaveThePlanet – Smart Contract Audit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0e1a2b;
+            color: #e8f4ff;
+            margin: 0;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid #1f3551;
+        }
+        h1, h2 {
+            color: #52b5ff;
+        }
+        section {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #14263b;
+            border-radius: 10px;
+            border: 1px solid #1f3551;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            font-size: 14px;
+            opacity: .6;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SAVETHEPLANET – SMART CONTRACT AUDIT</h1>
+    <p>Independent analysis and security validation</p>
+</header>
+
+<section>
+    <h2>Audit Scope</h2>
+    <ul>
+        <li>ERC-20 token implementation</li>
+        <li>Mint, burn & transfer logic</li>
+        <li>Gas optimization review</li>
+        <li>Malicious access prevention</li>
+        <li>Treasury & tax functions</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Testing Procedures</h2>
+    <ul>
+        <li>Automated static analysis</li>
+        <li>Manual code review</li>
+        <li>Simulation with test cases</li>
+        <li>Attack scenario modeling</li>
+        <li>Stress and scalability tests</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Results & Certifications</h2>
+    <p>
+        The smart contract has been reviewed according to Web3 industry standards.  
+        No critical vulnerabilities detected in the audited version.
+    </p>
+    <ul>
+        <li>No overflow/underflow bugs</li>
+        <li>No centralization control risks</li>
+        <li>No unauthorized minting vectors</li>
+        <li>Tax and liquidity logic validated</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Public Transparency</h2>
+    <p>
+        Full report, audit logs, and source code are publicly available  
+        and stored on-chain for decentralization and immutability.
+    </p>
+</section>
+
+<footer>
+    SaveThePlanet – Smart Contract Audit • 2025
+</footer>
+
+</body>
+</html>
