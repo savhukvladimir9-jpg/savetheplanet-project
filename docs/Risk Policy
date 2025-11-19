@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaveThePlanet – Risk Policy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0e1a2b;
+            color: #e8f4ff;
+            margin: 0;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid #1f3551;
+        }
+        h1, h2 {
+            color: #52b5ff;
+        }
+        section {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #14263b;
+            border-radius: 10px;
+            border: 1px solid #1f3551;
+        }
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            font-size: 14px;
+            opacity: .6;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SAVETHEPLANET – RISK POLICY</h1>
+    <p>Responsible and transparent investment principles</p>
+</header>
+
+<section>
+    <h2>Core Risk Factors</h2>
+    <ul>
+        <li>Volatility of cryptocurrency markets</li>
+        <li>Regulatory changes in global jurisdictions</li>
+        <li>Blockchain network congestion or failures</li>
+        <li>Third-party service downtime</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Mitigation Strategy</h2>
+    <ul>
+        <li>Multi-chain deployment support</li>
+        <li>DAO-based financial decision-making</li>
+        <li>Security audits for any major updates</li>
+        <li>Transparent treasury reporting</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Liquidity Protection</h2>
+    <ul>
+        <li>Gradual unlock schedules</li>
+        <li>No sudden treasury withdrawals</li>
+        <li>Community oversight via on-chain data</li>
+    </ul>
+</section>
+
+<section>
+    <h2>User Guidelines</h2>
+    <ul>
+        <li>Never invest more than you can afford to lose</li>
+        <li>Always research before voting</li>
+        <li>Use audited decentralized platforms</li>
+    </ul>
+</section>
+
+<footer>
+    SaveThePlanet – Risk Policy • 2025
+</footer>
+
+</body>
+</html>
