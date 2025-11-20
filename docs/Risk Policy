@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Risk Policy — SaveThePlanet (STP)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><a href="index.html">← Back</a></header>
+
+  <main>
+    <h1>Risk Policy / Политика рисков</h1>
+
+    <p>
+      Инвестиции в проект SaveThePlanet (STP) связаны с рисками.
+      Покупая STP, каждый участник должен понимать, что стоимость токена
+      на рынке не гарантирована и может изменяться.
+    </p>
+
+    <h2>Основные возможные риски</h2>
+    <ul>
+      <li><strong>Рыночный риск:</strong> цена токена может расти или падать в зависимости от рыночных условий.</li>
+      <li><strong>Риск блокчейна:</strong> работа зависит от сети Binance Smart Chain; сбои и перегрузки сети могут влиять на транзакции.</li>
+      <li><strong>Регуляторный риск:</strong> изменения законов могут влиять на работу криптопроектов.</li>
+      <li><strong>Риск команды:</strong> развитие проекта зависит от компетенции и ресурсов команды.</li>
+      <li><strong>Риск конкуренции:</strong> на рынке уже существуют десятки схожих проектов.</li>
+      <li><strong>Риск децентрализации:</strong> решения, принимаемые через DAO, могут быть непредсказуемыми.</li>
+      <li><strong>Отсутствие гарантий прибыли:</strong> проект не обещает дохода или роста цены токена.</li>
+    </ul>
+
+    <h2>Как мы снижаем риски</h2>
+    <ul>
+      <li>Прозрачность транзакций на блокчейне</li>
+      <li>Регулярная отчетность</li>
+      <li>Разработка экосистемы и реальных партнёрств</li>
+      <li>Диверсификация экологических направлений</li>
+      <li>Открытые планы и дорожная карта</li>
+    </ul>
+
+    <h2>Финальное предупреждение</h2>
+    <p>
+      Покупатели STP должны самостоятельно оценивать риски и принимать инвестиционные решения.
+      Проект не принимает ответственности за возможные финансовые потери.
+    </p>
+
+    <p><strong>Контакты:</strong></p>
+    <p>
+      Email: <a href="mailto:savhukvladimir9@gmail.com">savhukvladimir9@gmail.com</a><br>
+      Telegram: <a href="https://t.me/saveplanettokn" target="_blank">@saveplanettokn</a>
+    </p>
+
+  </main>
+
+  <footer>© 2025 SaveThePlanet (STP)</footer>
+</body>
+</html>
