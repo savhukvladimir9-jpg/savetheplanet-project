@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SaveThePlanet – Official Docs</title>
+
+  <!-- Modern Crypto Style -->
+  <style>
+    body {
+      margin: 0;
+      background: #0b0f14;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #e8f1fa;
+    }
+
+    header {
+      padding: 20px;
+      background: #121820;
+      text-align: center;
+      border-bottom: 1px solid #232d3a;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 700;
+      color: #4fd96f;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 25px;
+    }
+
+    .card {
+      background: #141c24;
+      border: 1px solid #1f2a36;
+      padding: 18px;
+      margin-bottom: 18px;
+      border-radius: 10px;
+      transition: 0.25s;
+    }
+
+    .card:hover {
+      border-color: #4fd96f;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #4fd96f;
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 25px;
+      text-align: center;
+      background: #121820;
+      border-top: 1px solid #232d3a;
+      color: #5b6b7d;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>SaveThePlanet – Official Documents</h1>
+  </header>
+
+  <div class="container">
+    <h2>📑 Project Documents</h2>
+    <div id="documents"></div>
+  </div>
+
+  <footer>
+    SaveThePlanet Token • All Rights Reserved
+  </footer>
+
+  <!-- Auto Document Scanner -->
+  <script>
+    const pdfFiles = [
+      "STP_Whitepaper.pdf",
+      "Tokenomics.pdf",
+      "Roadmap.pdf",
+      "RiskPolicy.pdf"
+    ];
+
+    const container = document.getElementById("documents");
+
+    pdfFiles.forEach(file => {
+      const el = document.createElement("div");
+      el.className = "card";
+
+      el.innerHTML = `
+        <a href="./${file}" target="_blank">
+          📎 ${file.replace(".pdf","")}
+        </a>
+      `;
+
+      container.appendChild(el);
+    });
+  </script>
+</body>
+</html>
